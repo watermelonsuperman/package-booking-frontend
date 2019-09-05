@@ -34,6 +34,14 @@
 ]"
         />
       </a-form-item>
+      <a-form-item label="状态" :label-col="{ span: 5 }" :wrapper-col="{ span: 12 }">
+        <a-input
+          v-decorator="[
+'status',
+{rules: [{ required: true, message: 'Please input your 重量!' }]}
+]"
+        />
+      </a-form-item>
       <a-form-item :wrapper-col="{ span: 12, offset: 5 }">
         <a-button type="primary" html-type="submit">Submit</a-button>
       </a-form-item>

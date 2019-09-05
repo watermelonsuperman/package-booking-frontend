@@ -14,6 +14,9 @@ export default new Vuex.Store({
   actions: {
     addMsg (store, form) {
       axios.post('http://localhost:8080/packages', form)
+    },
+    addMsg (store, form) {
+      axios.post('http://localhost:8080/packages', form)
     }
   }
 })
